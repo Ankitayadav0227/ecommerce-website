@@ -20,11 +20,11 @@ app.get("/", (req, res) => {
 });
 
 // Routes
-const userRoutes = require("./routes/userRoutes");
-const productRoutes = require("./routes/productRoutes");
+const UserRoutes = require("./Routes/userRoutes");
+const ProductRoutes = require("./Routes/ProductRoutes");
 
-app.use("/api/users", userRoutes);
-app.use("/api/products", productRoutes);
+app.use("/api/Users", UserRoutes);
+app.use("/api/Products", ProductRoutes);
 
 // Server Port
 const PORT = process.env.PORT || 5000;
